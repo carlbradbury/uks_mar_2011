@@ -9,8 +9,8 @@ namespace nothinbutdotnetstore.web.core
         MissingCommandFactory missing_command_factory;
         IEnumerable<RequestCommand> all_commands;
 
-        public DefaultCommandRegistry():this(new StubSetOfCommands(),
-            new StubMissingCommandFactory().create)
+        public DefaultCommandRegistry():this(Stub.with<StubSetOfCommands>(),
+            Stub.with<StubMissingCommandFactory>().create)
         {
         }
 

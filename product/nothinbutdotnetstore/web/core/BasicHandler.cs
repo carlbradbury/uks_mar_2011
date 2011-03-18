@@ -8,8 +8,8 @@ namespace nothinbutdotnetstore.web.core
         FrontController front_controller;
         RequestFactory request_factory;
 
-        public BasicHandler() : this(new DefaultFrontController(),
-                                     Stub.with<StubRequestFactory>())
+        public BasicHandler():this(new DefaultFrontController(),
+            Stub.with<StubRequestFactory>())
         {
         }
 

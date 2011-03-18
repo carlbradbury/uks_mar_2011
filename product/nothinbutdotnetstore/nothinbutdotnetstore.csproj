@@ -82,6 +82,9 @@
     <Compile Include="DefaultUrlRegistry.cs" />
     <Compile Include="tasks\startup\Startup.cs" />
     <Compile Include="UrlRegistry.cs" />
+    <Compile Include="utility\containers\Container.cs" />
+    <Compile Include="utility\containers\ContainerResolver.cs" />
+    <Compile Include="utility\containers\DependencyContainer.cs" />
     <Compile Include="utility\ValueReturningVisitor.cs" />
     <Compile Include="utility\Visitor.cs" />
     <Compile Include="utility\VisitorExtensions.cs" />
@@ -118,7 +121,7 @@
     <Compile Include="web\core\FrontController.cs" />
     <Compile Include="web\core\IncomingRequest.cs" />
     <Compile Include="web\core\InputModelMapper.cs" />
-    <Compile Include="web\core\MappingFactory.cs" />
+    <Compile Include="web\core\MappingGateway.cs" />
     <Compile Include="web\core\MissingCommandFactory.cs" />
     <Compile Include="web\core\PayloadBuilder.cs" />
     <Compile Include="web\core\PayloadBuilderFactory.cs" />
@@ -138,10 +141,12 @@
     <Compile Include="web\core\Query.cs" />
     <Compile Include="web\core\RequestContainsCommand.cs" />
     <Compile Include="web\core\PropertyExpressionTokenFactory.cs" />
+    <Compile Include="web\core\stubs\StubUrlBuilderFactory.cs" />
     <Compile Include="web\core\TokenStore.cs" />
     <Compile Include="web\core\UrlBuilder.cs" />
     <Compile Include="web\core\UrlBuilderFactory.cs" />
     <Compile Include="web\core\UrlFormattingVisitor .cs" />
+    <Compile Include="web\core\WithDetailBuilder.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
